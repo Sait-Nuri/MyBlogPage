@@ -1,0 +1,70 @@
+<div id="write_comment_module" >
+    <div id="commenter_icon" ng-style="{{comment_border_css}}">
+        <div style="height: 70%; padding: 10px;">
+            <img style="height: 100%; width: 100%;" src="assets/img/user-icon.png" alt="">
+        </div>
+        <div style="height: 30%; text-align: center;">User</div>
+    </div>
+    <div id="write_comment_container">
+        <div id="write_box" ng-style="{{comment_border_css}}">
+            <div id="write_box_inner">Leave a comment...
+            </div>
+        </div>
+        <div id="write_option" ng-style="{{comment_border_css}}">
+            <div id="blank" style="height: 100%; width: 70%; float: left;"></div>
+            <div id="button_comment">
+                <button type="submit" style="height: 100%; width: 100%; font-size: 20px;">Send</button></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #write_comment_module{
+        margin-top: 5px;
+        height: 150px;
+    }
+
+    #commenter_icon{
+        height: 100%;
+        float: left;
+        width: 10%;
+        padding:0px;
+        background-color: #d9edf7;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #write_comment_container{
+        height: 100%;
+        float: left;
+        width: 90%;
+        padding-left: 5px;
+
+    }
+
+    #write_box{
+        height: 70%;
+        background-color: #b9def0;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #write_box_inner{
+        height:100%;
+        padding: 10px;
+        word-wrap: break-word;
+        font-weight: lighter;
+    }
+
+    #write_option{
+        height: 30%;
+        width: 100%;
+        background-color: #b9def0;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #button_comment{
+        height: 100%;
+        width: 20%;
+        float: right;
+        padding: 2px;
+    }
+</style>

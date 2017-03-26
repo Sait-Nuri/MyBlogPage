@@ -1,0 +1,33 @@
+<div id="navbar" ng-style="{{leftnavbar_css}}">
+    <ul>
+        <li><a href="#/app_sec">Application Security</a></li>
+        <li><a href="#/net_sec">Network Security</a></li>
+        <li><a href="#/web_sec">Web Security</a></li>
+    </ul>
+    <style>
+        #navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #BAC8FF;
+            border: 1px solid #949494;
+            font-size: 12px;
+        }
+
+        #navbar ul li {
+            width: 100%;
+        }
+
+        #navbar li a {
+            display: block;
+            color: #000;
+            padding: 6px 12px;
+            text-decoration: none;
+            border: 1px solid #4F4F4F;
+        }
+        #navbar li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</div>
