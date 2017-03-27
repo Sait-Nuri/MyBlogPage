@@ -1,37 +1,39 @@
-<div id="comments_module" ng-style="{{comment_border_css}}">
+<div id="comments_module" class="comment_border_css">
     <div style="height:auto; background: #d9edf7">
         <div style="height: auto; display: block; background: #d9edf7;" >
             <div id="comment_author_pic" >
-                <div style="height: 90px; padding: 10px;">
+                <div style="height: 80px; padding: 5px;">
                     <img style="height: 100%; width: 100%;" src="assets/img/user-icon.png" alt="">
                 </div>
-                <div style="text-align: center; overflow: hidden;">
-                    Ahmet Bey
+                <div style="text-align: center; overflow: hidden; font-size: 13px;">
+                    <b>{{info.author}}</b>
                 </div>
             </div>
             <div id="comment_expanding">
                 <div id="author" style="height: 30px; padding: 5px; width: 100%;" >
                     <div style="height: 100%; width: 100%;">
-                        <div style="height: 100%; min-width: 50px; overflow: hidden; float: left; "><b>Said Nuri UYANIK</b></div>
-                        <div style="height: 100%; min-width: 50px; overflow: hidden; float: left; margin-left: 40px;" ><b>22.02.2017</b></div>
+                        <div style="height: 100%; min-width: 50px; overflow: hidden; float: left; "><b>Konu: {{info.title}}</b></div>
+                        <div style="height: 100%; min-width: 50px; overflow: hidden; float: left; margin-left: 40px;" ><b>{{info.date}}</b></div>
                         <div style="height: 100%; min-width: 50px; overflow: hidden; float: right; margin-right: 20px;"><b>Hide</b></div>
                     </div>
                 </div>
                 <div style="height: 1px;background: black"></div>
-                <div id="comment_body" style="min-height: 70px; max-height: inherit; padding: 5px;"></div>
+                <div id="comment_body" style="min-height: 70px; max-height: inherit; padding: 5px;">
+                    {{info.comment}}
+                </div>
                 <div style="height: 1px;background: black"></div>
                 <div id="comment_actions">
                     <table id="comment_table" style="height: 100%; padding: 5px;">
                         <tr>
                             <td id="comment_like_count" style="height: 100%; width: 20px;">
-                                <b>21</b>
+                                <b>{{info.like}}</b>
                             </td>
                             <td id="comment_like_b" style="height: 100%; width: 20px;">
                                 <a href="#" ><img src="assets/img/caret-up.png" alt=""></a>
                             </td>
                             <td style="width: 10px;"></td>
                             <td id="comment_dislike_count" style="height: 100%; width: 20px;">
-                                <b>11</b>
+                                <b>{{info.dislike}}</b>
                             </td>
                             <td id="comment_dislike_b" style="height: 100%; width: 20px;">
                                 <a href="#" ><img src="assets/img/caret-down.png" alt=""></a>
@@ -77,5 +79,10 @@
         height: 25px;
         padding: 2px 5px;
         font-size: small;
+    }
+
+    .comment_border_css{
+        border-style: solid;
+        border-width: 1px;
     }
 </style>

@@ -58,7 +58,8 @@
 						<div>
 							<div ng-include src="'app/components/comment/partials/comment_header.html'"></div>
 							<div ng-include src="'app/components/comment/partials/write_comment_module.html'"></div>
-							<div ng-include src="'app/components/comment/partials/comments_module.html'"></div>
+							<comment info="comment1"></comment>
+							<comment info="comment2"></comment>
 						</div>
 					</div>
 				</div>
@@ -87,6 +88,7 @@
 		<!-- Services -->
 		<script src="app/components/menu/menuService.js"></script>
 		<script src="app/styleService.js"></script>
+		<script src="app/components/comment/commentDirective.js"></script>
 
 		<!-- Controllers -->
 		<script src="app/components/icon/iconController.js"></script>
