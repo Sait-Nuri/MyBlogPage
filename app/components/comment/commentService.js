@@ -5,9 +5,4 @@ app.directive('reply', function () {
     var directive = {};
     directive.restrict = 'E';
     directive.templateUrl = 'app/components/comment/replyDirective.js';
-
-    directive.scope = {
-        id : '@',
-        name : '@'
-    }
 });

@@ -1,15 +1,15 @@
-<div id="comments_module" class="comment_border_css">
+<div class="comment_border_css comments_module">
     <div style="height:auto; background: #d9edf7">
         <div style="height: auto; display: block; background: #d9edf7;" >
-            <div id="comment_author_pic" >
+            <div class="comment_author_pic" >
                 <div style="height: 80px; padding: 5px;">
                     <img style="height: 100%; width: 100%;" src="assets/img/user-icon.png" alt="">
                 </div>
                 <div style="text-align: center; overflow: hidden; font-size: 13px;">
-                    <b>{{info.author}}</b>
+                    <b></b>{{info.author}}
                 </div>
             </div>
-            <div id="comment_expanding">
+            <div class="comment_expanding">
                 <div id="author" style="height: 30px; padding: 5px; width: 100%;" >
                     <div style="height: 100%; width: 100%;">
                         <div style="height: 100%; min-width: 50px; overflow: hidden; float: left; "><b>Konu: {{info.title}}</b></div>
@@ -22,8 +22,8 @@
                     {{info.comment}}
                 </div>
                 <div style="height: 1px;background: black"></div>
-                <div id="comment_actions">
-                    <table id="comment_table" style="height: 100%; padding: 5px;">
+                <div class="comment_actions">
+                    <table class="comment_table" style="height: 100%; padding: 5px;">
                         <tr>
                             <td id="comment_like_count" style="height: 100%; width: 20px;">
                                 <b>{{info.like}}</b>
@@ -52,30 +52,30 @@
     </div>
 </div>
 <style>
-    #comments_module{
+    .comments_module{
         margin-top : 5px;
         background : #F2F7FF;
         box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    #comment_expanding{
+    .comment_expanding{
         height: 100%;
         width: 90%;
         float:right;
         border-left: 1px solid black;
     }
-    #comment_table td{
+    .comment_table td{
         text-align: center;
     }
 
-    #comment_author_pic{
+    .comment_author_pic{
         height: 120px;
         width: 10%;
         float:left;
         padding: 5px;
     }
 
-    #comment_actions{
+    .comment_actions{
         height: 25px;
         padding: 2px 5px;
         font-size: small;
