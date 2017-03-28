@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb24a9c-7d2e-4282-b702-76eeb0936048" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/comment/commentStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/angular-css.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyBlog.iws" />
@@ -410,7 +412,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490734055212</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="style ile html ayrıştırma işi başarılı. Directive içerisinde harici css dosyası çağrılabiliyor. Bir sonraki adım projenin diğer kısımları da düzenlenecek. ng-route hala hata basıyor">
+      <created>1490734093775</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490734093775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
