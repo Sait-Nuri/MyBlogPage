@@ -422,7 +422,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490734199806</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="style ile html ayrıştırma işi başarılı. Directive içerisinde harici css dosyası çağrılabiliyor. Bir sonraki adım projenin diğer kısımları da düzenlenecek. ng-route hala hata basıyor">
+      <created>1490734238705</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490734238705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
