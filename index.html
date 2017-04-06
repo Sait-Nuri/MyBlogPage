@@ -36,15 +36,17 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<div id="body_section" class="row" style="height:720px; margin-top: 30px; ">
 				<div ng-controller="MenuController" id="menu" class="col-md-2" ng-style="{{createBorder() }}" >
 					<div id="menu_inside" class="row" ng-style="{{menu_inside_css}}" >
+						<div style="margin-top: 15px; padding-left: 5px; padding-right: 5px;">
+							<h5><b>KONULAR</b></h5>
+						</div>
 						<div id="leftnavbar" ng-include src="'app/components/menu/leftNavBar.html'"></div>
 					</div>
 				</div>
-				<div ng-controller="ContentController" id="content" class="col-md-10"  style="height:100%; overflow: auto">
+				<div ng-controller="ContentController" id="content" class="col-md-10" style="height:100%; overflow: auto">
 					<div ng-style="{{createBorder()}}" style="background: #737373">
 						<div id="inner_content" ng-style="{{inner_content_css}}">
 							<div ng-view></div>
@@ -58,27 +60,28 @@
 						<div>
 							<div ng-include src="'app/components/comment/partials/comment_header.html'"></div>
 							<div ng-include src="'app/components/comment/partials/write_comment_module.html'"></div>
+						</div>
+						<div style="height: 50px; margin-top: 30px;">
+							<h1>Yorumlar</h1>
+						</div>
+						<div id="comment_block">
 							<comment info="comment1"></comment>
 							<comment info="comment2"></comment>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="footer" class="row" ng-controller = "FooterController"  style="height: 160px; margin-top: 20px;">
-				<div class="col-md-12" style="height: 100%;">
-					<div id="inner_footer" ng-style="inner_footer_css">
-						<h1>FOOTER SECTION</h1>
-					</div>
-				</div>
-			</div>
+			<div  class="row" ng-controller="FooterController" ng-include src="'app/shared/footer/footer_view.html'"></div>
 		</div>
 
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+
 
 		<!-- AngularJS -->
 		<script src="assets/js/angular.min.js"></script>
+		<script src="assets/js/angular-animate.min.js"></script>
+		<script src="assets/js/angular-sanitize.js"></script>
+		<script src="assets/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
 		<script src="assets/js/angular-route.js"></script>
 		<script src="assets/js/angular-css.min.js"></script>
 

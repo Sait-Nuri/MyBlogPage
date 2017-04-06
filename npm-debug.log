@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-ui-bootstrap' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 verbose config Skipping project config: /home/said/.npmrc. (matches userconfig)
+5 verbose stack Error: Cannot find module 'internal/fs'
+5 verbose stack     at Function.Module._resolveFilename (module.js:470:15)
+5 verbose stack     at Function.Module._load (module.js:418:25)
+5 verbose stack     at Module.require (module.js:498:17)
+5 verbose stack     at require (internal/module.js:20:19)
+5 verbose stack     at evalmachine.<anonymous>:18:20
+5 verbose stack     at Object.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/cmd-shim/node_modules/graceful-fs/fs.js:11:1)
+5 verbose stack     at Module._compile (module.js:571:32)
+5 verbose stack     at Object.Module._extensions..js (module.js:580:10)
+5 verbose stack     at Module.load (module.js:488:32)
+5 verbose stack     at tryModuleLoad (module.js:447:12)
+6 verbose cwd /home/said/WebstormProjects/MyBlog
+7 error Linux 3.13.0-24-generic
+8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "angular-ui-bootstrap"
+9 error node v7.4.0
+10 error npm  v4.0.5
+11 error code MODULE_NOT_FOUND
+12 error Cannot find module 'internal/fs'
+13 error If you need help, you may report this error at:
+13 error     <https://github.com/npm/npm/issues>
+14 verbose exit [ 1, true ]

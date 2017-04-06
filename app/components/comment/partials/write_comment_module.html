@@ -3,17 +3,25 @@
         <div style="height: 70%; padding: 10px;">
             <img style="height: 100%; width: 100%;" src="assets/img/user-icon.png" alt="">
         </div>
-        <div style="height: 30%; text-align: center;">User</div>
+        <div id="user_name"  style="height: 30%; text-align: center;">
+            <b>User</b>
+        </div>
     </div>
     <div id="write_comment_container">
-        <div id="write_box" ng-style="{{comment_border_css}}">
-            <div id="write_box_inner">Leave a comment...
+            <div id="write_box" ng-style="{{comment_border_css}}">
+            <div id="write_box_inner">
+                <textarea name="comment" id="comment_text" ></textarea>
             </div>
         </div>
         <div id="write_option" ng-style="{{comment_border_css}}">
-            <div id="blank" style="height: 100%; width: 70%; float: left;"></div>
+            <div id="blank" style="height: 100%; width: 70%; float: left; padding: 5px; display: table; ">
+                <div style="height: 100%; width: 100%; display: table-cell; vertical-align: middle;">
+                    <b>Konu:&nbsp;</b>
+                    <input  id="topic_input" type="text" name="topic_name" style="">
+                </div>
+            </div>
             <div id="button_comment">
-                <button type="submit" style="height: 100%; width: 100%; font-size: 20px;">Send</button></div>
+                <button class="btn btn:hover" type="submit" style="height: 100%; width: 100%;">Send</button></div>
         </div>
     </div>
 </div>
@@ -43,15 +51,19 @@
 
     #write_box{
         height: 70%;
-        background-color: #b9def0;
+        background-color: #cdcdcd;
         box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     #write_box_inner{
         height:100%;
-        padding: 10px;
+        padding: 2px;
         word-wrap: break-word;
         font-weight: lighter;
+        border: solid 1px #fff;
+        box-shadow: inset 1px 1px 2px 0 #c6c6c6;
+        transition: box-shadow 0.3s;
+        background: #cdd7d2;
     }
 
     #write_option{
@@ -65,6 +77,46 @@
         height: 100%;
         width: 20%;
         float: right;
-        padding: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    #comment_text{
+        outline: none;
+        resize: none;
+        height: 100%;
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+
+    #topic_input{
+        width:300px;
+        border: solid 1px #fff;
+        box-shadow: inset 1px 1px 2px 0 #707070;
+        transition: box-shadow 0.3s;
+        padding: 3px;
+        background: #deebe5;
+    }
+
+    .btn {
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        border-width: 1px;
+        border-color: #3d3d3d;
+        color: #ffffff;
+        font-size: 18px;
+        background: #4f88ba;
+        padding: 5px;
+        text-decoration: none;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .btn:hover {
+        background: #19a4fa;
+        text-decoration: none;
     }
 </style>

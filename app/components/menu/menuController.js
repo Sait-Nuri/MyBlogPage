@@ -4,14 +4,18 @@ app.controller('MenuController', ['$scope', 'styleService', function($scope, sty
 
     $scope.createBorder = styleService.createBorder;
 
-    $scope.menu_inside_css = {'background' : '#F2F8FA',
-                              'height': '100%',
-                              'padding-top':'10px',
-                              'padding-bottom':'10px',
-                              'padding-left':'5px',
-                              'padding-right':'5px'
+    $scope.menu_inside_css = {'background' : '#B3BAFF',
+                              'height': '100%'
     };
 
     $scope.leftnavbar_css = {'height':'100%'}
+
+    $scope.isCollapsed = false;
+
+    $scope.status = {
+        isCustomHeaderOpen: false,
+        isFirstOpen: true,
+        isFirstDisabled: false
+    };
 }]);
 
