@@ -1,21 +1,11 @@
-var app = angular.module('myApp');
+var app = angular.module('appModule');
 
-app.controller('MenuController', ['$scope', 'styleService', function($scope, styleService){
-
-    $scope.createBorder = styleService.createBorder;
+app.controller('MenuController', ['$scope', function($scope){
 
     $scope.menu_inside_css = {'background' : '#B3BAFF',
                               'height': '100%'
     };
 
     $scope.leftnavbar_css = {'height':'100%'}
-
-    $scope.isCollapsed = false;
-
-    $scope.status = {
-        isCustomHeaderOpen: false,
-        isFirstOpen: true,
-        isFirstDisabled: false
-    };
 }]);
 

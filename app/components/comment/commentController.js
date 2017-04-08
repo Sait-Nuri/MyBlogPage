@@ -1,7 +1,6 @@
-var app = angular.module('myApp');
+var app = angular.module('appModule');
 
-app.controller('CommentController', ['$scope', 'styleService', function($scope, styleService){
-    $scope.createBorder = styleService.createBorder;
+app.controller('CommentController', ['$scope', function($scope){
     $scope.inner_comment_css = {'padding-top':'10px',
                                 'padding-bottom':'10px',
                                 'padding-left':'15px',

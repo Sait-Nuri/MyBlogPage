@@ -1,107 +1,134 @@
 <!DOCTYPE html>
-<html ng-app = "myApp">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MyBlog</title>
-		<meta content="">
-		<link rel="icon" href="icon.svg">
+<html lang="en" ng-app="appModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="">
+    <title>MyBlog-v1.1</title>
 
-		<!-- Bootstrap -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-		<style>
-			body {
-			    background-color: #C4C4C4;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container" id="main_container">
-			<div class="row" id="header" style="height:240px; margin-top: 10px; ">
-				<div id="icon_section" ng-controller = "IconController" class="col-sm-2" ng-style="createBorder()">
-					<div id="icon_image" class="row" ng-style="{{icon_image_css}}" ng-include src="'app/components/icon/icon_image.html'"></div>
-					<div id="icon_motto" class="row" ng-style="{{icon_motto_css}}" ng-include src="'app/components/icon/icon_motto.html'"></div>
-					<div id="icon_social" class="row" ng-style="{{icon_social_css}}" ng-include src="'app/components/icon/icon_social.html'"></div>
-				</div>
-				<div ng-controller = "BannerController" class="col-sm-10" id="banner" style="height: 100%;">
-					<div class="col-md-12" ng-style="{{createBorder()}}">
-						<div class="row" style="background: #c15973; height: 80%;">
-							<div id="inner_banner"	ng-style="{{inner_banner_css}}">
-								<img style="height: 100%; width: 100%;" src="assets/img/banner.jpg" alt="banner">
-							</div>
-						</div>
-						<div class="row" style="height: 20%; background-color: #000000;">
-							<div style="height: 100%;" ng-include src="'app/shared/banner/navbar.html'"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="body_section" class="row" style="height:720px; margin-top: 30px; ">
-				<div ng-controller="MenuController" id="menu" class="col-md-2" ng-style="{{createBorder() }}" >
-					<div id="menu_inside" class="row" ng-style="{{menu_inside_css}}" >
-						<div style="margin-top: 15px; padding-left: 5px; padding-right: 5px;">
-							<h5><b>KONULAR</b></h5>
-						</div>
-						<div id="leftnavbar" ng-include src="'app/components/menu/leftNavBar.html'"></div>
-					</div>
-				</div>
-				<div ng-controller="ContentController" id="content" class="col-md-10" style="height:100%; overflow: auto">
-					<div ng-style="{{createBorder()}}" style="background: #737373">
-						<div id="inner_content" ng-style="{{inner_content_css}}">
-							<div ng-view></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="comment_section" ng-controller = "CommentController" class="row" style="margin-top: 10px; ">
-				<div class="col-md-12" >
-					<div id="inner_comment" ng-style="{{inner_comment_css}}">
-						<div>
-							<div ng-include src="'app/components/comment/partials/comment_header.html'"></div>
-							<div ng-include src="'app/components/comment/partials/write_comment_module.html'"></div>
-						</div>
-						<div style="height: 50px; margin-top: 30px;">
-							<h1>Yorumlar</h1>
-						</div>
-						<div id="comment_block">
-							<comment info="comment1"></comment>
-							<comment info="comment2"></comment>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div  class="row" ng-controller="FooterController" ng-include src="'app/shared/footer/footer_view.html'"></div>
-		</div>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            background-color: #C4C4C4;
+            min-height: 100%;
+        }
+        .border{
+            height:100%;
+            border:1px solid rgba(0,0,0,.125);
+            border-radius : .25rem;
+        }
+        #icon_image{
+            height : 75%;
+            background : #EBEBEB;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #icon_motto{
+            height : 15%;
+            background : #E3ECFF;
+        }
+        #icon_social{
+            height: 10%;
+            background: #91A7FF;
+        }
+        #banner{
+            height: 100%;
+        }
+        #inner_banner{
 
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
+        }
+    </style>
 
+    <div id="main_container" class="container" >
+        <div id="main_header" class="row" style="height: 240px; margin-top: 10px;">
+            <div id="icon_section" ng-controller="IconController" class="col-sm-2 border">
+                <div id="icon_image" class="row" ng-include src="'app/components/header/icon/icon_image.html'"></div>
+                <div id="icon_motto" class="row" ng-include src="'app/components/header/icon/icon_motto.html'"></div>
+                <div id="icon_social" class="row" ng-include src="'app/components/header/icon/icon_social.html'"></div>
+            </div>
+            <div id="banner" ng-controller="BannerController" class="col-sm-10">
+                <div class="col-md-12 border">
+                    <div id="inner_banner" class="row" style="background: #c15973; height: 80%;">
+                        <img style="height: 100%; width: 100%;" src="assets/img/banner.jpg" alt="banner">
+                    </div>
+                    <div class="row" style="height: 20%; background-color: #000000;">
+                        <div style="height: 100%;" ng-include src="'app/components/header/banner/navbar.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- AngularJS -->
-		<script src="assets/js/angular.min.js"></script>
-		<script src="assets/js/angular-animate.min.js"></script>
-		<script src="assets/js/angular-sanitize.js"></script>
-		<script src="assets/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
-		<script src="assets/js/angular-route.js"></script>
-		<script src="assets/js/angular-css.min.js"></script>
+        <div id="body_section" class="row" style="height:720px; margin-top: 30px;">
+            <div id="menu" ng-controller="MenuController" class="col-md-2 border">
+                <div id="menu_inside" class="row" ng-style="{{menu_inside_css}}" >
+                    <div style="margin-top: 15px; padding-left: 5px; padding-right: 5px;">
+                        <h5><b>KONULAR</b></h5>
+                    </div>
+                    <div id="leftnavbar" ng-include src="'app/components/menu/leftNavBar.html'"></div>
+                </div>
+            </div>
+            <div id="content" ng-controller="ContentController"  class="col-md-10" style="height:100%; overflow: auto">
+                <div class="border" style="background: #737373; height: 100%;">
+                    <div id="inner_content" ng-style="{{inner_content_css}}">
+                        <div ng-view></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comment_section" ng-controller = "CommentController" class="row" style="margin-top: 10px;">
+            <div class="col-md-12" >
+                <div id="inner_comment" ng-style="{{inner_comment_css}}">
+                    <div>
+                        <div ng-include src="'app/components/comment/partials/comment_header.html'"></div>
+                        <div ng-include src="'app/components/comment/partials/write_comment_module.html'"></div>
+                    </div>
+                    <div style="height: 50px; margin-top: 30px;">
+                        <h1>Yorumlar</h1>
+                    </div>
+                    <div id="comment_block">
+                        <comment info="comment1"></comment>
+                        <comment info="comment2"></comment>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="row" ng-controller="FooterController" ng-include src="'app/components/footer/footer/footer_view.html'"></div>
+    </div>
+</head>
+<body>
 
-		<!-- Project modules -->
-		<script src="app/app.module.js"></script>
-		<script src="app/app.routes.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-		<!-- Controllers -->
-		<script src="app/components/icon/iconController.js"></script>
-		<script src="app/shared/banner/bannerController.js"></script>
-		<script src="app/components/content/contentController.js"></script>
-		<script src="app/components/comment/commentController.js"></script>
-		<script src="app/shared/footer/footerController.js"></script>
-		<script src="app/components/menu/menuController.js"></script>
+    <!-- AngularJS -->
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-animate.js"></script>
+    <script src="assets/js/angular-sanitize.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/ui-bootstrap-tpls-2.5.0.js"></script>
 
-		<!-- Services -->
-		<script src="app/components/menu/menuService.js"></script>
-		<script src="app/styleService.js"></script>
-		<script src="app/components/comment/commentDirective.js"></script>
+    <script src="assets/js/angular-css.min.js"></script>
 
+    <!-- Project modules -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
 
-	</body>
+    <!-- Services -->
+    <script src="app/components/menu/menuService.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/app.controller.js"></script>
+    <script src="app/components/header/icon/iconController.js"></script>
+    <script src="app/components/header/banner/bannerController.js"></script>
+    <script src="app/components/content/contentController.js"></script>
+    <script src="app/components/comment/commentController.js"></script>
+    <script src="app/components/footer/footer/footerController.js"></script>
+    <script src="app/components/menu/menuController.js"></script>
+
+    <!-- Directives -->
+    <script src="app/components/comment/commentDirective.js"></script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-var app = angular.module('myApp');
+var app = angular.module('appModule');
 
 app.directive('comment', function () {
     var directive = {};

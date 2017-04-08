@@ -1,6 +1,9 @@
-var app = angular.module('myApp');
+var app = angular.module('appModule');
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+
+    $locationProvider.hashPrefix('');
+
     $routeProvider
         .when('/', {
             template: '<h1>DEFAULT<h1>',
@@ -21,5 +24,4 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         .otherwise({
             redirectTo: '/'
         });
-
 }]);
