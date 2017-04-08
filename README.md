@@ -1,12 +1,31 @@
-# MyBlogPage
+# MyBlogPage To-do list
+
+#Icon Section
+1. Motto text style
+2. Social media icons
+
+#Banner Section
+1. navbar implementation
+2. Search bar
+
+#Left Menu Section
+1. List and Sublist implementation via $http
+2. Menu style
+3. ng-route configuration
+
+#Body Section
+1. Content style (text, image, code style)
+2. Async Loading
+3. Scrollable content
 
 #Comment Section
-1. commenter div overflow
-2. comment topic div overflow
-3. Dynamic texts (topics, names, numbers, dates)
-4.
+1. Commenter text in div overflow control
+2. comment topic text overflow control
+3. Dynamic texts (topics, names, numbers, dates) implementation
+4. Comment actions (send comment, like, dislike) implementation
+5. Comments async loading implementation
 
-#Left Menu
-1. Expandable menu
-2. ng-route
-3.
+#General
+1. Interaction with back-end and it's design
+2. DB design
+3. Posting page design
