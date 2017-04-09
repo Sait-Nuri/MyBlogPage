@@ -7,19 +7,19 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
         .when('/', {
             template: '<h1>DEFAULT<h1>',
-            controller: 'app/components/menu/menuController.js'
+            controller: 'ContentController'
         })
         .when('/app_sec', {
             templateUrl: 'app/components/menu/route/appsec.html',
-            controller: 'app/components/menu/menuController.js'
+            controller: 'ContentController'
         })
         .when('/net_sec', {
             templateUrl: 'app/components/menu/route/netsec.html',
-            controller: 'app/components/menu/menuController.js'
+            controller: 'ContentController'
         })
         .when('/web_sec', {
             templateUrl: 'app/components/menu/route/websec.html',
-            controller: 'app/components/menu/menuController.js'
+            controller: 'ContentController'
         })
         .otherwise({
             redirectTo: '/'

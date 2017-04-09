@@ -12,6 +12,7 @@
 1. List and Sublist implementation via $http
 2. Menu style
 3. ng-route configuration
+4. menu directive *
 
 #Body Section
 1. Content style (text, image, code style)
