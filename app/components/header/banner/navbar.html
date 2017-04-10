@@ -3,8 +3,34 @@
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
+    <div id="search_bar">
+        <button id="search_button">Search</button><input id="search_input" type="text" name="topic_name">
+    </div>
 
     <style>
+
+        #search_button{
+            margin-right: 5px;
+            height: 28px;
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #search_bar{;
+            height: 100%;
+            float: right;
+        }
+
+        #search_input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            width:200px;
+            border: solid 1px #fff;
+            box-shadow: inset 1px 1px 2px 0 #707070;
+            transition: box-shadow 0.3s;
+            padding: 3px;
+            background: #deebe5;
+        }
 
         /* Add a black background color to the top navigation */
         .topnav {
