@@ -6,7 +6,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     $routeProvider
         .when('/', {
-            template: '<h1>DEFAULT<h1>',
+            templateUrl: 'app/components/menu/route/mainPage.html',
             controller: 'ContentController'
         })
         .when('/app_sec', {
