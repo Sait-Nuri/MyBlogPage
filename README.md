@@ -27,6 +27,6 @@
 5. Comments async loading implementation
 
 #General
-1. Interaction with back-end and it's design
+1. Specify elements which interact with server 
 2. DB design
 3. Posting page design
