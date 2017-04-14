@@ -1,0 +1,35 @@
+.news_outer{
+    height: 250px;
+    width: 100%;
+    background-color: #ffffcc;
+}
+
+.news_header{
+    height: 30%;
+    background-color: #ebebeb;
+    overflow:hidden
+}
+
+.share_options{
+    height: 10%;
+    background-color: #ccffcc;
+}
+
+.news_body{
+    height: 60%;
+    background-color: #cee7ff;
+}
+
+.news_image{
+    height: 150px;
+    width: 150px;
+    float:left;
+    padding:5px;
+}
+
+.news_text{
+    text-overflow: ellipsis;
+    height: 97%;
+    float: right;
+    padding:3px 5px;
+}

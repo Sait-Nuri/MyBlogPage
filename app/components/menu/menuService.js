@@ -5,10 +5,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $locationProvider.hashPrefix('');
 
     $routeProvider
-        .when('/', {
-            templateUrl: 'app/components/menu/route/mainPage.html',
-            controller: 'ContentController'
-        })
         .when('/app_sec', {
             templateUrl: 'app/components/menu/route/appsec.html',
             controller: 'ContentController'
@@ -20,8 +16,5 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         .when('/web_sec', {
             templateUrl: 'app/components/menu/route/websec.html',
             controller: 'ContentController'
-        })
-        .otherwise({
-            redirectTo: '/'
         });
 }]);

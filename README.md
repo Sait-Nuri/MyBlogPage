@@ -2,17 +2,18 @@
 
 #Icon Section
 1. Motto text style
-2. Social media icons
+2. Social media icons: OK.
 
 #Banner Section
-1. navbar implementation
-2. Search bar
+1. navbar implementation: OK.
+2. Search bar: OK.
+3. Header text vertical align
 
 #Left Menu Section
 1. List and Sublist implementation via $http
 2. Menu style
 3. ng-route configuration
-4. menu directive *
+4. menu directive: OK.
 
 #Body Section
 1. Content style (text, image, code style)

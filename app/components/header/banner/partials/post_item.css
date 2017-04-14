@@ -1,0 +1,42 @@
+.post_outer{
+    display: inline-block;
+    height: 150px;
+    width: 400px;
+    background-color: #a5b3cf;
+    border:1px solid rgb(112, 112, 112);
+    border-radius : .25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post_image_outer{
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: #761c19;
+}
+
+.post_image{
+    height: 80%;
+}
+
+.post_image_info{
+    height: 20%;
+}
+
+.post_text{
+    height: 100%;
+    width: 70%;
+    float: right;
+    background-color: #9d9d9d;
+}
+
+.post_header{
+    height: 30%;
+    overflow:hidden;
+    border-bottom: 1px solid #1F1F1F;
+}
+
+.post_body{
+    height:70%;
+    overflow:hidden;
+}
