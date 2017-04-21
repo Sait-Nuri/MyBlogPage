@@ -1,1 +1,1 @@
-var app = angular.module('appModule', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS', 'ngRoute']);
+var app = angular.module('appModule', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'angularCSS', 'ngRoute', '720kb.socialshare']);

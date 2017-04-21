@@ -5,15 +5,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $locationProvider.hashPrefix('');
 
     $routeProvider
-        .when('/home', {
-            templateUrl: 'app/components/header/banner/route/mainPage.html',
+        .when('/', {
+            templateUrl: 'app/components/header/banner/route/main.page/mainPage.html',
             controller: 'ContentController'
         })
         .when('/news', {
-            templateUrl: 'app/components/header/banner/route/newsPage.html',
+            templateUrl: 'app/components/header/banner/route/news.page/newsPage.html',
             controller: 'ContentController'
         })
-        .otherwise({
-            redirectTo: '/home'
-        });
 }]);

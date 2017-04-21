@@ -10,9 +10,9 @@
 
 .post_image_outer{
     height: 100%;
-    width: 30%;
+    width: 125px;
     float: left;
-    background-color: #761c19;
+    background-color: #7cb666;
 }
 
 .post_image{
@@ -21,11 +21,14 @@
 
 .post_image_info{
     height: 20%;
+    color: #45303c;
+    font-size: 12px;
+    display: table;
 }
 
 .post_text{
     height: 100%;
-    width: 70%;
+    width: calc(100% - 125px);
     float: right;
     background-color: #9d9d9d;
 }
