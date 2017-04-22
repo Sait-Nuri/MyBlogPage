@@ -1,6 +1,6 @@
 <ul>
     <li class="list"><a ng-click="item.isCollapsed = !item.isCollapsed">{{item.subject}}</a></li>
     <ul ng-repeat="each in item.sublist">
-        <li class="sublist" uib-collapse="item.isCollapsed"><a href="#/{{each.route}}">{{each.name}}</a></li>
+        <li class="sublist" uib-collapse="item.isCollapsed"><a ui-sref="{{each.route}}">{{each.name}}</a></li>
     </ul>
 </ul>

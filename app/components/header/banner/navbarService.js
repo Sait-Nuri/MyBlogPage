@@ -1,16 +1,17 @@
 var app = angular.module('appModule');
 
-app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+app.service('SetService', function(){
+    this.configureData = function(items) {
 
-    $locationProvider.hashPrefix('');
+        console.log('in configure service');
 
-    $routeProvider
-        .when('/', {
-            templateUrl: 'app/components/header/banner/route/main.page/mainPage.html',
-            controller: 'ContentController'
-        })
-        .when('/news', {
-            templateUrl: 'app/components/header/banner/route/news.page/newsPage.html',
-            controller: 'ContentController'
-        })
-}]);
+        var posts = [
+            {header: 'Angular security flaw', content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', numread:'5'},
+            {header: 'CISCO IOS security flaw', content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', numread:'5'},
+            {header: 'Android backdoor detected', content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' , numread:'5'},
+            {header: 'Windows 10 zero day exploit', content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', numread:'5'}
+        ];
+
+        return posts;
+    }
+});

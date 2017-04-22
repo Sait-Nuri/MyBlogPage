@@ -1,19 +1,20 @@
 var app = angular.module('appModule');
 
-app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
-    $locationProvider.hashPrefix('');
-
-    $routeProvider
-        .when('/app_sec', {
+    $stateProvider
+        .state('app_sec', {
+            url: '/app_sec',
             templateUrl: 'app/components/menu/route/appsec.html',
             controller: 'ContentController'
         })
-        .when('/net_sec', {
+        .state('net_sec', {
+            url: '/net_sec',
             templateUrl: 'app/components/menu/route/netsec.html',
             controller: 'ContentController'
         })
-        .when('/web_sec', {
+        .state('web_sec', {
+            url: '/web_sec',
             templateUrl: 'app/components/menu/route/websec.html',
             controller: 'ContentController'
         });
