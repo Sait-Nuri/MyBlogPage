@@ -3,6 +3,7 @@ var app = angular.module('appModule', [ 'ngAnimate',
                                         'ui.bootstrap',
                                         'angularCSS',
                                         'ui.router',
+                                        'uiRouterStyles',
                                         '720kb.socialshare']);
 
 app.constant('Config', {

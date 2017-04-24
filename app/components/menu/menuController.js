@@ -6,11 +6,11 @@ app.controller('MenuController', ['$scope', function($scope){
                               'height': '100%'};
 
     $scope.leftnavbar_css = {'height':'100%'};
-    $scope.item1 = {subject:'Security',
-        isCollapsed:true,
-        sublist:[{route:'app_sec', name:'Application Security'}
-            ,{route:'web_sec', name:'Web Security'}
-            ,{route:'net_sec', name:'Network Security'}]};
+    $scope.item1 = {subject: 'Security',
+                    isCollapsed: true,
+                    sublist:[{route:'app_sec', name:'Application Security'}
+                        ,{route:'web_sec', name:'Web Security'}
+                        ,{route:'net_sec', name:'Network Security'}]};
 
 }]);
 

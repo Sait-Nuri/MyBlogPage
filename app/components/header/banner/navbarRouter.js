@@ -2,32 +2,31 @@ var app = angular.module('appModule');
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
 
     // Home page shows posts
         .state('home', {
-            url:'/home',
+            url:'/',
             templateUrl: 'app/components/header/banner/route/main.page/mainPage.html',
-
-            controller: function($scope, promiseGetData, SetService){
-                $scope.posts = SetService.configureData(promiseGetData);
+            controller: function($scope, postDataRsv, SetService){
+                $scope.posts = SetService.configurePostData(postDataRsv);
             },
-
             resolve:{
-                promiseGetData: function($templateRequest, Config, $http){ // $http returns a promise for the url data
-                    console.log('Request: ' + Config.post_url);
-
-                    return $http({method: 'GET', url: Config.post_url})
-                        .then (function (data) {
-                            console.log('gelen data: ' + data);
-                            return data;
-                        });
-
-
-                    return 'res';
+                // $http returns a promise for the url data
+                postDataRsv: function($templateRequest, Config, SetService){
+                    console.log('home Request: ' + Config.post_url);
+                    return SetService.getData(Config.post_url);
                 }
+            }
+        })
+
+        .state('post', {
+            url: "/post/:id",
+            templateUrl:'app/components/header/banner/route/main.page/postPage.html',
+            controller: function($scope, $stateParams){
+                $scope.postId = $stateParams.id;
             }
         })
 
@@ -35,7 +34,39 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('news', {
             url:'/news',
             templateUrl: 'app/components/header/banner/route/news.page/newsPage.html',
-            controller: 'ContentController'
+            controller: function($scope, newsDataRsv, SetService){
+                $scope.news_items = SetService.configureNewsData(newsDataRsv);
+            },
+            resolve:{
+                // $http returns a promise for the url data
+                newsDataRsv: function($templateRequest, Config, SetService){
+                    console.log('home Request: ' + Config.post_url);
+                    return SetService.getData(Config.post_url);
+                }
+            }
+        })
+
+        // Contact page
+        .state('contact', {
+            url:'/contact',
+            templateUrl: 'app/components/header/banner/route/contact/contact.html',
+            controller: function($scope, SetService){
+
+            },
+            data: {
+                css: 'app/components/header/banner/route/contact/contact.css'
+            }
+        })
+
+        .state('about', {
+            url:'/about',
+            templateUrl: 'app/components/header/banner/route/about/aboutUs.html',
+            controller: function($scope, SetService){
+
+            },
+            data: {
+                css: 'app/components/header/banner/route/about/aboutUs.css'
+            }
         })
 }]);
 

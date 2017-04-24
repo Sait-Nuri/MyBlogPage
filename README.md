@@ -1,19 +1,16 @@
 # MyBlogPage To-do list
 
 #Icon Section
-1. Motto text style
-2. Social media icons: OK.
+1. social media style
 
 #Banner Section
-1. navbar implementation: OK.
-2. Search bar: OK.
-3. Header text vertical align
+1. Navbar route pages design and style.
+2. Header text vertical align
 
 #Left Menu Section
 1. List and Sublist implementation via $http
 2. Menu style
-3. ng-route configuration
-4. menu directive: OK.
+3. Route menu configuration
 
 #Body Section
 1. Content style (text, image, code style)
@@ -31,3 +28,4 @@
 1. Specify elements which interact with server 
 2. DB design
 3. Posting page design
+4. Caching
