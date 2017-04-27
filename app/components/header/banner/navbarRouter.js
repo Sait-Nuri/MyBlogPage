@@ -33,18 +33,29 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         // news page
         .state('news', {
             url:'/news',
-            templateUrl: 'app/components/header/banner/route/news.page/newsPage.html',
+            templateUrl: 'app/components/header/banner/route/news.page/newsMainPage.html',
             controller: function($scope, newsDataRsv, SetService){
                 $scope.news_items = SetService.configureNewsData(newsDataRsv);
             },
             resolve:{
                 // $http returns a promise for the url data
                 newsDataRsv: function($templateRequest, Config, SetService){
-                    console.log('home Request: ' + Config.post_url);
-                    return SetService.getData(Config.post_url);
+                    console.log('news Request: ' + Config.news_url);
+                    return SetService.getData(Config.news_url);
                 }
             }
         })
+
+
+        // each news
+        .state('newpage', {
+            url:'/news/:id',
+            templateUrl: 'app/components/header/banner/route/news.page/newsPage.html',
+            controller: function($scope, $stateParams){
+                $scope.newsId = $stateParams.id;
+            }
+        })
+
 
         // Contact page
         .state('contact', {

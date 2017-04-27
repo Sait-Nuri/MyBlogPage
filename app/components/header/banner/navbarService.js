@@ -1,10 +1,10 @@
 var app = angular.module('appModule');
 
-app.service('SetService', function($http, $location){
+app.service('SetService', function($http, $location, Config){
 
     // configure incoming post data from webservice
     this.configurePostData = function(items) {
-        console.log('in configure service');
+        console.log('in Post configure service');
 
         var posts = [
             {header: 'Angular security flaw', content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', numread:'5', url: $location.absUrl()+'post/1'},
@@ -18,11 +18,11 @@ app.service('SetService', function($http, $location){
 
     // configure incoming news data from webservice
     this.configureNewsData = function(items) {
-        console.log('in configure service');
+        console.log('in News configure service');
 
        var news = [
-            {header: 'Referandum sonuçları belli oldu'},
-            {header: '2 terörist etkisiz hale getirildi'}
+            {header: 'Referandum sonuçları belli oldu', url: $location.absUrl()+'/1'},
+            {header: '2 terörist etkisiz hale getirildi', url: $location.absUrl()+'/2'}
         ];
 
         return news;

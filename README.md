@@ -8,7 +8,7 @@
 2. Header text vertical align
 
 #Left Menu Section
-1. List and Sublist implementation via $http
+1. Menu states configuration.
 2. Menu style
 3. Route menu configuration
 
@@ -29,3 +29,12 @@
 2. DB design
 3. Posting page design
 4. Caching
+
+---index.html----
+<div ui-view="navbar"></div>
+<div ui-view="iconbar"></div>
+<div ui-view="sidebar"></div>
+<div ui-view="content"></div>
+
+---content.html----
+<div ui-view></div>
