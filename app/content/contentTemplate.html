@@ -1,0 +1,16 @@
+<div id="content" ng-controller="ContentController" style="height:100%; overflow: auto">
+    <div class="border" style="background: #737373; height: 100%;">
+        <div id="inner_content">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
+<style>
+    #inner_content{
+        height: 100%;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+</style>

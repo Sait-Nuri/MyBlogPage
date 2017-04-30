@@ -1,0 +1,24 @@
+<div class="col-md-12" ng-controller = "CommentController" >
+    <div id="inner_comment">
+        <div>
+            <div ng-include src="'app/comment/partials/comment_header.html'"></div>
+            <div ng-include src="'app/comment/partials/write_comment_module.html'"></div>
+        </div>
+        <div style="height: 50px; margin-top: 30px;">
+            <h1>Yorumlar</h1>
+        </div>
+        <div id="comment_block">
+            <comment info="comment1"></comment>
+            <comment info="comment2"></comment>
+        </div>
+    </div>
+</div>
+<style>
+    #inner_comment{
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:15px;
+        padding-right:15px;
+        background: #d0e9c6;
+    }
+</style>

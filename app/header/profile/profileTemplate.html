@@ -1,0 +1,20 @@
+<div id="icon_section" ng-controller="ProfileController" style="height: 100%;">
+    <div id="icon_image" class="row" ng-include src="'app/header/profile/partials/profile_image.html'"></div>
+    <div id="icon_motto" class="row" ng-include src="'app/header/profile/partials/profile_motto.html'"></div>
+    <div id="icon_social" class="row" ng-include src="'app/header/profile/partials/profile_social.html'"></div>
+</div>
+<style>
+    #icon_image{
+        height : 75%;
+        background : #EBEBEB;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #icon_motto{
+        height : 15%;
+        background : #E3ECFF;
+    }
+    #icon_social{
+        height: 10%;
+        background: #91A7FF;
+    }
+</style>

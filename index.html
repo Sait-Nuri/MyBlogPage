@@ -22,85 +22,35 @@
             border:1px solid rgba(0,0,0,.125);
             border-radius : .25rem;
         }
-        #icon_image{
-            height : 75%;
-            background : #EBEBEB;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        #icon_motto{
-            height : 15%;
-            background : #E3ECFF;
-        }
-        #icon_social{
-            height: 10%;
-            background: #91A7FF;
-        }
-        #banner{
-            height: 100%;
-        }
-        #inner_banner{
-
-        }
-
-        .shadow{
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .comment_border_css{
+            border-style: solid;
+            border-width: 1px;
         }
     </style>
 
     <div id="main_container" class="container" >
-        <div id="main_header" class="row" style="height: 240px; margin-top: 10px;">
-            <div id="icon_section" ng-controller="IconController" class="col-sm-2 border">
-                <div id="icon_image" class="row" ng-include src="'app/components/header/icon/icon_image.html'"></div>
-                <div id="icon_motto" class="row" ng-include src="'app/components/header/icon/icon_motto.html'"></div>
-                <div id="icon_social" class="row" ng-include src="'app/components/header/icon/icon_social.html'"></div>
-            </div>
-            <div id="banner" ng-controller="BannerController" class="col-sm-10">
-                <div class="col-md-12 border">
-                    <div id="inner_banner" class="row" style="background: #c15973; height: 80%;">
-                        <img style="height: 100%; width: 100%;" src="assets/img/banner.jpg" alt="banner">
-                    </div>
-                    <div class="row" style="height: 20%; background-color: #000000;">
-                        <div style="height: 100%;" ng-include src="'app/components/header/banner/navbar.html'"></div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- profil fotoğrafının ve top navbarın olduğu bölüm -->
+        <div id="header_section" class="row" style="height: 240px; margin-top: 10px;">
+            <div ui-view="profile" style="height: 100%;" class="col-sm-2 border"></div>
+            <div ui-view="banner" style="height: 100%;" class="col-sm-10"></div>
         </div>
 
+        <!-- Sol menü ve içerik bölümü -->
         <div id="body_section" class="row" style="height:720px; margin-top: 30px;">
-            <div id="menu" ng-controller="MenuController" class="col-md-2 border">
-                <div id="menu_inside" class="row" ng-style="{{menu_inside_css}}" >
-                    <div style="margin-top: 15px; padding-left: 5px; padding-right: 5px;">
-                        <h5><b>KONULAR</b></h5>
-                    </div>
-                    <div id="leftnavbar" ng-include src="'app/components/menu/leftNavBar.html'"></div>
-                </div>
-            </div>
-            <div id="content" ng-controller="ContentController"  class="col-md-10" style="height:100%; overflow: auto">
-                <div class="border" style="background: #dedede; height: 100%;">
-                    <div id="inner_content" ng-style="{{inner_content_css}}">
-                        <div ui-view></div>
-                    </div>
-                </div>
-            </div>
+            <div ui-view="sidebar" style="height: 100%; background: #B3BAFF;" class="col-md-2 border"></div>
+            <div ui-view="content" style="height: 100%;" class="col-sm-10"></div>
         </div>
-        <div id="comment_section" ng-controller = "CommentController" class="row" style="margin-top: 10px;">
-            <div class="col-md-12" >
-                <div id="inner_comment" ng-style="{{inner_comment_css}}">
-                    <div>
-                        <div ng-include src="'app/components/comment/partials/comment_header.html'"></div>
-                        <div ng-include src="'app/components/comment/partials/write_comment_module.html'"></div>
-                    </div>
-                    <div style="height: 50px; margin-top: 30px;">
-                        <h1>Yorumlar</h1>
-                    </div>
-                    <div id="comment_block">
-                        <comment info="comment1"></comment>
-                        <comment info="comment2"></comment>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Yorum bölümü -->
+        <div id="comment_section" class="row" style="margin-top: 10px;">
+            <div ui-view="comment"></div>
         </div>
-        <div  class="row" ng-controller="FooterController" ng-include src="'app/components/footer/footer/footer_view.html'"></div>
+
+        <!-- footer bölümü -->
+        <div id="footer_section" class="row">
+            <div ui-view="footer"></div>
+        </div>
     </div>
 </head>
 <body>
@@ -122,23 +72,29 @@
     <script src="app/app.routes.js"></script>
 
     <!-- Services -->
-    <script src="app/components/menu/menuRouter.js"></script>
-    <script src="app/components/header/banner/navbarService.js"></script>
-    <script src="app/components/header/banner/navbarRouter.js"></script>
+    <script src="app/header/banner/navbar/navbarService.js"></script>
+    <script src="app/footer/footerService.js"></script>
 
     <!-- Controllers -->
     <script src="app/app.controller.js"></script>
-    <script src="app/components/header/icon/iconController.js"></script>
-    <script src="app/components/header/banner/bannerController.js"></script>
-    <script src="app/components/content/contentController.js"></script>
-    <script src="app/components/comment/commentController.js"></script>
-    <script src="app/components/footer/footer/footerController.js"></script>
-    <script src="app/components/menu/menuController.js"></script>
+    <script src="app/sidebar/sidebarController.js"></script>
+    <script src="app/header/profile/profileController.js"></script>
+    <script src="app/header/banner/bannerController.js"></script>
+    <script src="app/content/contentController.js"></script>
+    <script src="app/comment/commentController.js"></script>
+    <script src="app/footer/footerController.js"></script>
+    <script src="app/sidebar/menu/menuItem.directive/menuController.js"></script>
 
     <!-- Directives -->
-    <script src="app/components/comment/commentDirective.js"></script>
-    <script src="app/components/menu/menuDirective.js"></script>
-    <script src="app/components/header/banner/route/main.page/postDirective.js"></script>
-    <script src="app/components/header/banner/route/news.page/newsDirective.js"></script>
+    <script src="app/comment/comment.directive/commentDirective.js"></script>
+    <script src="app/header/banner/route/main.page/postDirective.js"></script>
+    <script src="app/header/banner/route/news.page/newsDirective.js"></script>
+    <script src="app/sidebar/menu/menuItem.directive/menuDirective.js"></script>
+
+    <!-- Routers -->
+    <script src="app/header/banner/navbar/navbarRouter.js"></script>
+    <script src="app/sidebar/menu/menuItem.directive/menuRouter.js"></script>
+
+
 </body>
 </html>
