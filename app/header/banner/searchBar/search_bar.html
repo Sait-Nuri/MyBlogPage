@@ -1,0 +1,22 @@
+<button id="search_button" ng-click="search()" type="button" class="button" >Search</button>
+<input id="search_input" ng-model="data.search_value" type="text">
+
+<style>
+    #search_button{
+        margin-right: 5px;
+        height: 28px;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #search_input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width:200px;
+        border: solid 1px #fff;
+        box-shadow: inset 1px 1px 2px 0 #707070;
+        transition: box-shadow 0.3s;
+        padding: 3px;
+        background: #deebe5;
+    }
+</style>
