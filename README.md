@@ -1,5 +1,4 @@
 # MyBlogPage To-do list
 
-* navbar backend ile iletişime hazır.
-* Arama çubuğu backend ile iletişime hazır.
+* ng-strict eksik
 * sidebar loading ekranı hazır değil

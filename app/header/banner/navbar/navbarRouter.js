@@ -72,15 +72,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
                         return $http({method: 'GET', url: 'app/header/banner/route/main.page/postPage.html'})
                             .then(function(response) {
-                                console.log(response.data);
+                                //console.log(response.data);
+                                ContentService.setLoadingSpinner(false);
                                 return response.data;
                             });
                     },
-                    controller: function($scope, $stateParams, CommentService, ContentService){
-                        ContentService.setLoadingSpinner(false);
-                        $scope.postId = $stateParams.id;
-                        console.log('main.home.post');
+                    controller: function($scope, $stateParams, CommentService){
 
+                        $scope.postId = $stateParams.id;
+                        //console.log('main.home.post');
                         CommentService.setVisibility(true);
                     }
                 }

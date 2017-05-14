@@ -44,7 +44,7 @@
                 "desc":"Data binding",
                 "config":{
                     "url": "angular/lesson2",
-                    "templateUrl": "angular_lesson2.html"
+                    "templateUrl": "angular_lesson1.html"
                 }
             },
             {
@@ -52,7 +52,7 @@
                 "desc":"Controllers",
                 "config":{
                     "url": "angular/lesson3",
-                    "templateUrl": "angular_lesson3.html"
+                    "templateUrl": "web_sec.html"
                 }
             }
         ]
