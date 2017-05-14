@@ -3,7 +3,7 @@ var app = angular.module('appModule');
 app.provider('menustate', function ($stateProvider) {
     var menuUrl;
 
-    this.$get = function ($http) {
+    this.$get = function ($http, $rootScope) {
 
         var menuStates = {};
         var statePath = 'main';
@@ -14,12 +14,12 @@ app.provider('menustate', function ($stateProvider) {
                     method: 'GET',
                     url: menuUrl
                 }).then(function successCallback(response) { //get sidebar states as json
+                    $rootScope.menu_loading = false;
                     menuStates = response.data;
 
                     // for each menu item
                     for (var i = 0; i < menuStates.length; i++){
-                        var eachMenu = menuStates[i];
-                        var states = eachMenu.states;
+                        var states = menuStates[i].states;
 
                         // Configure each state
                         for (var j = 0; j < states.length; j++) {
@@ -51,11 +51,11 @@ app.config(['$stateProvider', 'menustateProvider', function($stateProvider, menu
 
     // This should be real server url
     menustateProvider.setMenuUrl('app/sidebar/menu/menuItem.directive/menulist.json');
-
 }]);
 
 
-app.run(['menustate', function(menustate) {
+app.run(['menustate', '$rootScope', function(menustate, $rootScope) {
     console.log('run block');
+    $rootScope.menu_loading = true;
     menustate.setUpStates();
 }]);

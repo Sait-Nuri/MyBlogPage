@@ -4,6 +4,7 @@
             <h5><b>KONULAR</b></h5>
         </div>
         <div id="leftnavbar" ng-controller="MenuController">
+            <div ng-show="menu_loading" ng-include src="'app/app.common/loadingPartial.html'" style="height: 100px;"></div>
             <div id="navbar" ng-repeat="each_item in menu_items">
                 <menu-item item="each_item"></menu-item>
             </div>
