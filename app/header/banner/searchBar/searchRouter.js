@@ -6,7 +6,7 @@ app.config(['$stateProvider', function($stateProvider){
 
         .state('main.search_loading', {
             url:'search/',
-            templateUrl: 'app/header/banner/searchBar/searchLoading.html',
+            templateUrl: 'app/app.common/loadingPartial.html',
             controller: 'SearchController'
         })
 

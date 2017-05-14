@@ -10,18 +10,18 @@
     <div id="write_comment_container">
             <div id="write_box" ng-style="{{comment_border_css}}">
             <div id="write_box_inner">
-                <textarea name="comment" id="comment_text" ></textarea>
+                <textarea ng-model="data.commentText" name="comment" id="comment_text" ></textarea>
             </div>
         </div>
         <div id="write_option" ng-style="{{comment_border_css}}">
             <div id="blank" style="height: 100%; width: 70%; float: left; padding: 5px; display: table; ">
                 <div style="height: 100%; width: 100%; display: table-cell; vertical-align: middle;">
                     <b>Konu:&nbsp;</b>
-                    <input  id="topic_input" type="text" name="topic_name" style="">
+                    <input ng-model="data.subject" id="topic_input" type="text" name="subject">
                 </div>
             </div>
             <div id="button_comment">
-                <button class="btn btn:hover" type="submit" style="height: 100%; width: 100%;">Send</button></div>
+                <button ng-click="sendComment()" class="btn btn:hover" type="submit" style="height: 100%; width: 100%;">Send</button></div>
         </div>
     </div>
 </div>

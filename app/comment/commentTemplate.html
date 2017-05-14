@@ -1,5 +1,7 @@
-<div class="col-md-12" ng-controller = "CommentController" ng-show="comment_visible">
-    <div id="inner_comment">
+<div class="col-md-12" ng-controller = "CommentController">
+    <div ng-include src="'app/comment/partials/after_comment_sent.html'"></div>
+
+    <div id="inner_comment" ng-show="comment_visible">
         <div>
             <div ng-include src="'app/comment/partials/comment_header.html'"></div>
             <div ng-include src="'app/comment/partials/write_comment_module.html'"></div>

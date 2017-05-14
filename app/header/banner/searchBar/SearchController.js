@@ -8,7 +8,5 @@ app.controller('SearchController', ['$scope', 'SearchService', function($scope, 
         var value = $scope.data.search_value; //get input value
 
         SearchService.requestSearch(value); // start remote search query
-
-
     }
 }]);

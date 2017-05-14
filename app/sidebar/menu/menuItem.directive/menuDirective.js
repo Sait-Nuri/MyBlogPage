@@ -8,7 +8,7 @@ app.directive('menuItem', function () {
 
     directive.scope = {
         item : '='
-    }
+    };
 
     return directive;
 });

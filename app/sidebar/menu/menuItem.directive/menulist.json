@@ -1,0 +1,29 @@
+{
+    "subject":"Security",
+    "states":[
+        {
+            "name":"app_sec",
+            "desc":"Application Security",
+            "config":{
+                "url": "security/app_sec",
+                "templateUrl": "app_sec.html"
+            }
+        },
+        {
+            "name":"net_sec",
+            "desc":"Web Security",
+            "config":{
+                "url": "security/net_sec",
+                "templateUrl": "net_sec.html"
+            }
+        },
+        {
+            "name":"web_sec",
+            "desc":"Network Security",
+            "config":{
+                "url": "security/web_sec",
+                "templateUrl": "web_sec.html"
+            }
+        }
+    ]
+}

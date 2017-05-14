@@ -43,18 +43,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('main.home', {
             url:'home/',
             templateUrl: 'app/header/banner/route/main.page/mainPage.html',
-            controller: function($scope, postDataRsv, SetService, CommentService){
-                $scope.posts = SetService.configurePostData(postDataRsv);
+            controller: function($scope, SetService, CommentService, $http, Config, ContentService){
+                ContentService.setLoadingSpinner(true);
                 console.log('main.home');
 
+                $http({method: 'GET', url: Config.post_url})
+                    .then(function(response) {
+                        console.log(response.data);
+                        $scope.posts = SetService.configurePostData(response.data);
+                        ContentService.setLoadingSpinner(false);
+                    });
+
                 CommentService.setVisibility(false);
-            },
-            resolve:{
-                // $http returns a promise for the url data
-                postDataRsv: function($templateRequest, Config, SetService){
-                    console.log('home Request: ' + Config.post_url);
-                    return SetService.getData(Config.post_url);
-                }
             }
         })
 
@@ -63,13 +63,25 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url:'post/:id',
             views:{
                 '@main':{
-                    templateUrl:'app/header/banner/route/main.page/postPage.html',
-                    controller: function($scope, $stateParams, CommentService){
+                    templateProvider: function ($stateParams, $http, ContentService) {
+                        var post_id = $stateParams.id;
+                        var url = 'serverhost/page/' + post_id;
+                        console.log('get: ' + url);
+
+                        ContentService.setLoadingSpinner(true);
+
+                        return $http({method: 'GET', url: 'app/header/banner/route/main.page/postPage.html'})
+                            .then(function(response) {
+                                console.log(response.data);
+                                return response.data;
+                            });
+                    },
+                    controller: function($scope, $stateParams, CommentService, ContentService){
+                        ContentService.setLoadingSpinner(false);
                         $scope.postId = $stateParams.id;
                         console.log('main.home.post');
 
                         CommentService.setVisibility(true);
-                        console.log(CommentService.is_visible());
                     }
                 }
             }
@@ -78,16 +90,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('main.news', {
             url:'news/',
             templateUrl: 'app/header/banner/route/news.page/newsMainPage.html',
-            controller: function($scope, newsDataRsv, SetService, CommentService){
-                $scope.news_items = SetService.configureNewsData(newsDataRsv);
+            controller: function($scope, SetService, CommentService, $http, Config, ContentService){
+                ContentService.setLoadingSpinner(true);
+
+                $http({method: 'GET', url: Config.news_url})
+                    .then(function(response) {
+                        $scope.news_items = SetService.configureNewsData(response.data);
+                        ContentService.setLoadingSpinner(false);
+                    });
+
                 console.log('main.news');
                 CommentService.setVisibility(false);
-            },
-            resolve:{   // $http returns a promise for the url data
-                newsDataRsv: function($templateRequest, Config, SetService){
-                    console.log('news Request: ' + Config.news_url);
-                    return SetService.getData(Config.news_url);
-                }
             }
         })
 
@@ -95,10 +108,20 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url:':id',
             views: {
                 '@main':{
-                    templateUrl: 'app/header/banner/route/news.page/newsPage.html',
-                    controller: function($scope, CommentService){
+                    templateProvider: function ($stateParams, $http, ContentService) {
+                        var news_id = $stateParams.id;
+                        ContentService.setLoadingSpinner(true);
+
+                        return $http({method: 'GET', url: 'app/header/banner/route/news.page/newsPage.html'})
+                            .then(function(response) {
+                                console.log(response.data);
+                                return response.data;
+                            });
+                    },
+                    controller: function($scope, CommentService, ContentService){
                         console.log('main.news.id');
                         CommentService.setVisibility(true);
+                        ContentService.setLoadingSpinner(false);
                     }
                 }
             }

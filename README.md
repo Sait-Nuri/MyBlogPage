@@ -1,5 +1,5 @@
 # MyBlogPage To-do list
 
-* Hide comment section
-* Make ready to write comment
-* 
+* navbar backend ile iletişime hazır.
+* Arama çubuğu backend ile iletişime hazır.
+* sidebar tam hazır değil

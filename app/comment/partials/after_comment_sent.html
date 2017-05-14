@@ -1,0 +1,25 @@
+<div id="comment_alert" class="comment_border_css" ng-show="alert_visible" ng-model="comment_message">
+    <h2>{{comment_message}}</h2>
+</div>
+<div id="spinner_style" ng-show="spinner_visible">
+    <div id="gif_loading"></div>
+</div>
+<style>
+    #comment_alert{
+        padding-left: 5px;
+        background: #F2F7FF;
+        font-size: medium;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #gif_loading{
+        background:url(assets/img/loading.gif) no-repeat center center;
+        height: 100%;
+    }
+
+    #spinner_style{
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>

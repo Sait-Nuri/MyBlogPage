@@ -7,8 +7,8 @@ var app = angular.module('appModule', [ 'ngAnimate',
                                         '720kb.socialshare']);
 
 app.constant('Config', {
-    post_url : 'http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo',
-    news_url : 'http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo'
+    post_url : 'app/header/banner/route/main.page/postData.json',
+    news_url : 'app/header/banner/route/news.page/newsData.json'
 });
 
 app.run(function($rootScope) {

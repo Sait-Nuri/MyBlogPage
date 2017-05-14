@@ -1,7 +1,9 @@
 <div id="content" ng-controller="ContentController" style="height:100%; overflow: auto">
     <div class="border" style="background: #737373; height: 100%;">
         <div id="inner_content" style="height: 100%;">
+            <div ng-show="loading_active" ng-include src="'app/app.common/loadingPartial.html'" style="height: 200px;"></div>
             <div ui-view style="height: 100%;"></div>
+
         </div>
     </div>
 </div>
