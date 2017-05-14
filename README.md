@@ -2,4 +2,4 @@
 
 * navbar backend ile iletişime hazır.
 * Arama çubuğu backend ile iletişime hazır.
-* sidebar tam hazır değil
+* sidebar loading ekranı hazır değil

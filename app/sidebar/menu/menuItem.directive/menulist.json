@@ -1,29 +1,60 @@
-{
-    "subject":"Security",
-    "states":[
-        {
-            "name":"app_sec",
-            "desc":"Application Security",
-            "config":{
-                "url": "security/app_sec",
-                "templateUrl": "app_sec.html"
+[
+    {
+        "subject":"Security",
+        "states":[
+            {
+                "name":"app_sec",
+                "desc":"Application Security",
+                "config":{
+                    "url": "security/app_sec",
+                    "templateUrl": "app/sidebar/menu/partials/app_sec.html"
+                }
+            },
+            {
+                "name":"net_sec",
+                "desc":"Web Security",
+                "config":{
+                    "url": "security/net_sec",
+                    "templateUrl": "app/sidebar/menu/partials/net_sec.html"
+                }
+            },
+            {
+                "name":"web_sec",
+                "desc":"Network Security",
+                "config":{
+                    "url": "security/web_sec",
+                    "templateUrl": "app/sidebar/menu/partials/web_sec.html"
+                }
             }
-        },
-        {
-            "name":"net_sec",
-            "desc":"Web Security",
-            "config":{
-                "url": "security/net_sec",
-                "templateUrl": "net_sec.html"
+        ]
+    },
+    {
+        "subject": "AngularJS",
+        "states": [
+            {
+                "name":"ders1",
+                "desc":"Introduction",
+                "config":{
+                    "url": "angular/lesson1",
+                    "templateUrl": "angular_lesson1.html"
+                }
+            },
+            {
+                "name":"ders2",
+                "desc":"Data binding",
+                "config":{
+                    "url": "angular/lesson2",
+                    "templateUrl": "angular_lesson2.html"
+                }
+            },
+            {
+                "name":"ders3",
+                "desc":"Controllers",
+                "config":{
+                    "url": "angular/lesson3",
+                    "templateUrl": "angular_lesson3.html"
+                }
             }
-        },
-        {
-            "name":"web_sec",
-            "desc":"Network Security",
-            "config":{
-                "url": "security/web_sec",
-                "templateUrl": "web_sec.html"
-            }
-        }
-    ]
-}
+        ]
+    }
+]

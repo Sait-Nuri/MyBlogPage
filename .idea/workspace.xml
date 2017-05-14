@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb24a9c-7d2e-4282-b702-76eeb0936048" name="Default" comment="style ile html ayrıştırma işi başarılı. Directive içerisinde harici css dosyası çağrılabiliyor. Bir sonraki adım projenin diğer kısımları da düzenlenecek. ng-route hala hata basıyor">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/said.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.common/loadingPartial.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comment/partials/after_comment_sent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/comment/partials/commentwritten.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/content/contentService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/header/banner/route/main.page/postData.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/header/banner/route/news.page/newsData.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/sidebar/menu/partials/appsec.html" afterPath="$PROJECT_DIR$/app/sidebar/menu/partials/app_sec.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/sidebar/menu/partials/netsec.html" afterPath="$PROJECT_DIR$/app/sidebar/menu/partials/net_sec.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/sidebar/menu/partials/websec.html" afterPath="$PROJECT_DIR$/app/sidebar/menu/partials/web_sec.html" />
+    <list default="true" id="8eb24a9c-7d2e-4282-b702-76eeb0936048" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.js" afterPath="$PROJECT_DIR$/app/app.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.routes.js" afterPath="$PROJECT_DIR$/app/app.routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.service.js" afterPath="$PROJECT_DIR$/app/app.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comment/commentController.js" afterPath="$PROJECT_DIR$/app/comment/commentController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comment/commentService.js" afterPath="$PROJECT_DIR$/app/comment/commentService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comment/commentTemplate.html" afterPath="$PROJECT_DIR$/app/comment/commentTemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comment/partials/write_comment_module.html" afterPath="$PROJECT_DIR$/app/comment/partials/write_comment_module.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/content/contentTemplate.html" afterPath="$PROJECT_DIR$/app/content/contentTemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/bannerController.js" afterPath="$PROJECT_DIR$/app/header/banner/bannerController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js" afterPath="$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/navbar/navbarService.js" afterPath="$PROJECT_DIR$/app/header/banner/navbar/navbarService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/searchBar/SearchController.js" afterPath="$PROJECT_DIR$/app/header/banner/searchBar/SearchController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/searchBar/searchLoading.html" afterPath="$PROJECT_DIR$/app/header/banner/searchBar/searchLoading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header/banner/searchBar/searchRouter.js" afterPath="$PROJECT_DIR$/app/header/banner/searchBar/searchRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuDirective.js" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuDirective.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/sidebarController.js" afterPath="$PROJECT_DIR$/app/sidebar/sidebarController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json" afterPath="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sidebar/sidebarTemplate.html" afterPath="$PROJECT_DIR$/app/sidebar/sidebarTemplate.html" />
     </list>
     <ignored path="MyBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +31,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.0">
+            <state vertical-scroll-proportion="-52.0">
               <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -69,21 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbarRouter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js">
+      <file leaf-file-name="menuController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="120" column="79" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12587413">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -93,7 +55,17 @@
         <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="88" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="88" />
+              <caret line="52" column="21" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12587413">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -103,27 +75,7 @@
         <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.0">
-              <caret line="3" column="98" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuDirective.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuDirective.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebarTemplate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sidebar/sidebarTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="3" column="83" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -148,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/components/menu/menuRouter.js" />
         <option value="$PROJECT_DIR$/app/components/header/banner/route/main.page/postPage.html" />
         <option value="$PROJECT_DIR$/app/components/header/banner/route/main.page/post_item.html" />
         <option value="$PROJECT_DIR$/app/components/header/banner/route/main.page/mainPage.html" />
@@ -181,9 +132,6 @@
         <option value="$PROJECT_DIR$/app/app.routes.js" />
         <option value="$PROJECT_DIR$/app/sidebar/sidebarController.js" />
         <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html" />
-        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js" />
-        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json" />
-        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js" />
         <option value="$PROJECT_DIR$/app/header/banner/searchBar/searchLoading.html" />
         <option value="$PROJECT_DIR$/app/header/banner/searchBar/searchRouter.js" />
         <option value="$PROJECT_DIR$/app/header/banner/bannerController.js" />
@@ -198,6 +146,10 @@
         <option value="$PROJECT_DIR$/app/header/banner/navbar/navbarService.js" />
         <option value="$PROJECT_DIR$/app/header/banner/route/main.page/postPage.html" />
         <option value="$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js" />
+        <option value="$PROJECT_DIR$/app/sidebar/sidebarTemplate.html" />
+        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js" />
+        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json" />
+        <option value="$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -308,6 +260,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,36 +382,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="route" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="banner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="route" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main.page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -671,7 +597,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490734288757</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Only sidebar module not ready to communicate with backend but rest of modules are.">
+      <created>1494765471060</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494765471060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -680,6 +612,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20817845" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -689,7 +622,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -730,7 +662,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="style ile html ayrıştırma işi başarılı. Directive içerisinde harici css dosyası çağrılabiliyor. Bir sonraki adım projenin diğer kısımları da düzenlenecek. ng-route hala hata basıyor" />
-    <option name="LAST_COMMIT_MESSAGE" value="style ile html ayrıştırma işi başarılı. Directive içerisinde harici css dosyası çağrılabiliyor. Bir sonraki adım projenin diğer kısımları da düzenlenecek. ng-route hala hata basıyor" />
+    <MESSAGE value="Only sidebar module not ready to communicate with backend but rest of modules are." />
+    <option name="LAST_COMMIT_MESSAGE" value="Only sidebar module not ready to communicate with backend but rest of modules are." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -804,6 +737,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09457093">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,14 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09030101">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30100334">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1075,49 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="79" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.0">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15761821">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="88" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="98" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sidebar/sidebarController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09030101">
@@ -1126,18 +1012,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuDirective.js">
+    <entry file="file://$PROJECT_DIR$/app/header/banner/navbar/navbarRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state vertical-scroll-proportion="2.8896322">
+          <caret line="120" column="79" selection-start-line="120" selection-start-column="79" selection-end-line="120" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sidebar/sidebarTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2206655">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30100334">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-52.0">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menu_item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="3" column="83" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menulist.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50437826">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuController.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sidebar/menu/menuItem.directive/menuRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1145,7 +1084,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12587413">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>

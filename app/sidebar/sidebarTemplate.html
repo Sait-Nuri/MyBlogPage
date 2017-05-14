@@ -4,8 +4,8 @@
             <h5><b>KONULAR</b></h5>
         </div>
         <div id="leftnavbar" ng-controller="MenuController">
-            <div id="navbar" style="height:100%">
-                <menu-item item="item1"></menu-item>
+            <div id="navbar" ng-repeat="each_item in menu_items">
+                <menu-item item="each_item"></menu-item>
             </div>
         </div>
     </div>
@@ -13,6 +13,14 @@
 <style>
     #menu_inside{
         background: #B3BAFF;
+        height:100%;
+    }
+
+    #leftnavbar{
+
+    }
+
+    #navbar{
         height:100%;
     }
 </style>
