@@ -1,4 +1,6 @@
-# MyBlogPage To-do list
+# MyBlogPage
 
-* ng-strict eksik
-* sidebar loading ekranı hazır değil
+* Single Page Application
+* Dynamic navbar menu
+* Dynamic sidebar menu
+* Dynamic content
