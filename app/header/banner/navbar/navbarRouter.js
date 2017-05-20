@@ -2,7 +2,7 @@ var app = angular.module('appModule');
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
-    $urlRouterProvider.otherwise('/home/');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
 
@@ -41,7 +41,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
         //home sayfasında iken postlar gözükecek
         .state('main.home', {
-            url:'home/',
+            url:'home',
             templateUrl: 'app/header/banner/route/main.page/mainPage.html',
             controller: function($scope, SetService, CommentService, $http, Config, ContentService){
                 ContentService.setLoadingSpinner(true);
@@ -60,7 +60,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
         // post individual page
         .state('main.home.post', {
-            url:'post/:id',
+            url:'/post/:id',
             views:{
                 '@main':{
                     templateProvider: function ($stateParams, $http, ContentService) {
@@ -88,7 +88,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
 
         .state('main.news', {
-            url:'news/',
+            url:'news',
             templateUrl: 'app/header/banner/route/news.page/newsMainPage.html',
             controller: function($scope, SetService, CommentService, $http, Config, ContentService){
                 ContentService.setLoadingSpinner(true);
@@ -105,7 +105,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
 
         .state('main.news.id', {
-            url:':id',
+            url:'/:id',
             views: {
                 '@main':{
                     templateProvider: function ($stateParams, $http, ContentService) {

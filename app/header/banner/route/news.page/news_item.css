@@ -1,17 +1,18 @@
 .news_outer{
     height: 250px;
     width: 100%;
-    background-color: #ffffcc;
 }
 
 .news_header{
-    height: 30%;
+    height: 25%;
     background-color: #ebebeb;
-    overflow:hidden
+    overflow:hidden;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .share_options{
-    height: 10%;
+    height: 15%;
     background-color: #ccffcc;
 }
 
@@ -21,10 +22,10 @@
 }
 
 .news_image{
-    height: 150px;
+    height: 100%;
     width: 150px;
     float:left;
-    padding:5px;
+    padding:2px;
 }
 
 .news_text{
@@ -34,4 +35,5 @@
     float: right;
     padding:5px 5px;
     overflow:hidden;
+    font-size: 18px;
 }

@@ -4,7 +4,8 @@ var app = angular.module('appModule', [ 'ngAnimate',
                                         'angularCSS',
                                         'ui.router',
                                         'uiRouterStyles',
-                                        '720kb.socialshare']);
+                                        '720kb.socialshare',
+                                        'xeditable']);
 
 app.constant('Config', {
     post_url : 'app/header/banner/route/main.page/postData.json',
