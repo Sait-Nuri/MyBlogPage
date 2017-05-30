@@ -11,27 +11,27 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             url: '/',
             views:{
                 'profile':{
-                    templateUrl: 'app/header/profile/profileTemplate.html',
+                    templateUrl: 'header/profile/profileTemplate.html',
                     controller:'ProfileController'
                 },
                 'banner':{
-                    templateUrl: 'app/header/banner/bannerTemplate.html',
+                    templateUrl: 'header/banner/bannerTemplate.html',
                     controller: 'BannerController'
                 },
                 'sidebar':{
-                    templateUrl: 'app/sidebar/sidebarTemplate.html',
+                    templateUrl: 'sidebar/sidebarTemplate.html',
                     controller: 'SidebarController'
                 },
                 'comment':{
-                    templateUrl: 'app/comment/commentTemplate.html',
+                    templateUrl: 'comment/commentTemplate.html',
                     controller: 'CommentController'
                 },
                 'footer':{
-                    templateUrl: 'app/footer/footerTemplate.html',
+                    templateUrl: 'footer/footerTemplate.html',
                     controller: 'FooterController'
                 },
                 'content':{
-                    templateUrl: 'app/content/contentTemplate.html',
+                    templateUrl: 'content/contentTemplate.html',
                     controller: function(){
                         console.log('content@main');
                     }
@@ -42,7 +42,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         //home sayfasında iken postlar gözükecek
         .state('main.home', {
             url:'home',
-            templateUrl: 'app/header/banner/route/main.page/mainPage.html',
+            templateUrl: 'header/banner/route/main.page/mainPage.html',
             controller: function($scope, SetService, CommentService, $http, Config, ContentService){
                 ContentService.setLoadingSpinner(true);
                 console.log('main.home');
@@ -70,7 +70,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
                         ContentService.setLoadingSpinner(true);
 
-                        return $http({method: 'GET', url: 'app/header/banner/route/main.page/postPage.html'})
+                        return $http({method: 'GET', url: 'header/banner/route/main.page/postPage.html'})
                             .then(function(response) {
                                 //console.log(response.data);
                                 ContentService.setLoadingSpinner(false);
@@ -89,7 +89,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
         .state('main.news', {
             url:'news',
-            templateUrl: 'app/header/banner/route/news.page/newsMainPage.html',
+            templateUrl: 'header/banner/route/news.page/newsMainPage.html',
             controller: function($scope, SetService, CommentService, $http, Config, ContentService){
                 ContentService.setLoadingSpinner(true);
 
@@ -112,7 +112,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                         var news_id = $stateParams.id;
                         ContentService.setLoadingSpinner(true);
 
-                        return $http({method: 'GET', url: 'app/header/banner/route/news.page/newsPage.html'})
+                        return $http({method: 'GET', url: 'header/banner/route/news.page/newsPage.html'})
                             .then(function(response) {
                                 console.log(response.data);
                                 return response.data;
@@ -129,26 +129,26 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
         .state('main.contact', {
             url:'contact',
-            templateUrl: 'app/header/banner/route/contact/contact.html',
+            templateUrl: 'header/banner/route/contact/contact.html',
             controller: function(){
                 console.log('main.contact');
             },
             data: {
                 css: [
-                    'app/header/banner/route/contact/contact.css'
+                    'header/banner/route/contact/contact.css'
                 ]
             }
         })
 
         .state('main.about', {
             url:'about',
-            templateUrl: 'app/header/banner/route/about/aboutUs.html',
+            templateUrl: 'header/banner/route/about/aboutUs.html',
             controller: function(){
                 console.log('main.about');
             },
             data: {
                 css: [
-                    'app/header/banner/route/about/aboutUs.css'
+                    'header/banner/route/about/aboutUs.css'
                 ]
             }
         })

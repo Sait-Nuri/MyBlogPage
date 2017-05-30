@@ -50,7 +50,7 @@ app.provider('menustate', function ($stateProvider) {
 app.config(['$stateProvider', 'menustateProvider', function($stateProvider, menustateProvider){
 
     // This should be real server url
-    menustateProvider.setMenuUrl('app/sidebar/menu/menuItem.directive/menulist.json');
+    menustateProvider.setMenuUrl('sidebar/menu/menuItem.directive/menulist.json');
 }]);
 
 

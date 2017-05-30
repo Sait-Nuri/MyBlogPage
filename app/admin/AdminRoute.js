@@ -6,7 +6,7 @@ app.config(['$stateProvider', function($stateProvider){
 
         .state('main.admin', {
             url:'admin',
-            templateUrl: 'app/admin/adminTemplate.html',
+            templateUrl: 'admin/adminTemplate.html',
             controller: 'AdminController'
         });
 }]);
