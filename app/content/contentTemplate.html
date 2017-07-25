@@ -1,16 +1,14 @@
-<div id="content" class="border"  ng-controller="ContentController" style="height:100%; overflow: auto; background: #B9B7B7; ">
-    <div style="height: 100%;">
-        <div id="inner_content" style="height: 100%;">
-            <div ng-show="loading_active" ng-include src="'app/app.common/loadingPartial.html'" style="height: 200px;"></div>
-            <div ui-view style="height: 100%;"></div>
+<div id="content" class="border"  ng-controller="ContentController" style="height:100%; background: #ebe9e9; ">
+    <div>
+        <div id="inner_content">
+            <div ng-show="loading_active" ng-include src="'app.common/loadingPartial.html'" style="height: 200px;"></div>
+            <div ui-view></div>
         </div>
     </div>
 </div>
 <style>
     #inner_content{
         height: 100%;
-        padding-top:10px;
-        padding-bottom:5px;
         padding-left:10px;
         padding-right:10px;
     }

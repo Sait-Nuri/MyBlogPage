@@ -43,7 +43,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('main.home', {
             url:'home',
             templateUrl: 'header/banner/route/main.page/mainPage.html',
-            controller: function($scope, SetService, CommentService, $http, Config, ContentService){
+            controller: function($scope, SetService, CommentService, $http, Config, ContentService, $location){
                 ContentService.setLoadingSpinner(true);
                 console.log('main.home');
 
@@ -60,12 +60,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
         // post individual page
         .state('main.home.post', {
-            url:'/post/:id',
+            url:'/post/:rest_id',
             views:{
                 '@main':{
                     templateProvider: function ($stateParams, $http, ContentService) {
-                        var post_id = $stateParams.id;
-                        var url = 'serverhost/page/' + post_id;
+                        var rest_id = $stateParams.rest_id;
+                        var url = 'post/' + rest_id;
                         console.log('get: ' + url);
 
                         ContentService.setLoadingSpinner(true);
@@ -79,7 +79,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                     },
                     controller: function($scope, $stateParams, CommentService){
 
-                        $scope.postId = $stateParams.id;
+                        $scope.postId = $stateParams.rest_id;
                         //console.log('main.home.post');
                         CommentService.setVisibility(true);
                     }

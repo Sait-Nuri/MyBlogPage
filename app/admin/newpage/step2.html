@@ -1,0 +1,13 @@
+<div class="center_text" style="margin-top: 10px; color: #3c3c3a;" >
+    <h2 class="fs-title">Step 2</h2>
+    <h3 class="fs-subtitle">Fill the details</h3>
+</div>
+<div id="step2" style="width: 80%; margin: 20px 10%;">
+    <div ng-repeat="(key, value) in data.attr">
+        <span>{{key+":"}}</span><a editable-text="data.attr[key]">{{ data.attr[key] || 'empty' }}</a>
+    </div>
+    <div style="margin-top: 15px; margin-bottom: 5px;">
+        <a ui-sref="main.admin.newpage.step3(page)" class="step_button">Next</a>
+    </div>
+</div>
+

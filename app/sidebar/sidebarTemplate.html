@@ -1,14 +1,15 @@
 <div id="menu" ng-controller="SidebarController">
     <div id="menu_inside" class="row">
-        <div style="margin-top: 15px; padding-left: 5px; padding-right: 5px;">
+        <div style="margin-top: 15px; padding-left: 1px; padding-right: 1px;">
             <h5><b>KONULAR</b></h5>
-        </div>
-        <div id="leftnavbar" ng-controller="MenuController">
-            <div ng-show="menu_loading" ng-include src="'app/app.common/loadingPartial.html'" style="height: 100px;"></div>
-            <div id="navbar" ng-repeat="each_item in menu_items">
-                <menu-item item="each_item"></menu-item>
+            <div id="leftnavbar" ng-controller="MenuController">
+                <div ng-show="menu_loading" ng-include src="'app.common/loadingPartial.html'" style="height: 100px;"></div>
+                <div id="navbar" ng-repeat="each_item in menu_items">
+                    <menu-item item="each_item"></menu-item>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 <style>

@@ -1,0 +1,36 @@
+{
+  "name": "myblog",
+  "version": "0.2.6",
+  "description": "A sample Node.js app using Express 4",
+  "author": "said",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async": "^2.4.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pg": "^6.2.3",
+    "pg-hstore": "^2.3.2",
+    "random-number": "0.0.7",
+    "sequelize": "^3.30.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/my-ngblog.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heroku/node-js-getting-started/issues"
+  },
+  "devDependencies": {}
+}

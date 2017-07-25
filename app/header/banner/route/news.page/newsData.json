@@ -1,10 +1,14 @@
 [
     {
-        "header": "Referandum sonuçları belli oldu",
+        "title": "Referandum sonuçları belli oldu",
+        "desc": "Referandumda AKP %51.2 aldı",
+        "numread": "21",
         "id": "1"
     },
     {
-        "header": "2 terörist etkisiz hale getirildi",
+        "title": "2 terörist etkisiz hale getirildi",
+        "desc": "2 leş var",
+        "numread": "21",
         "id": "2"
     }
 ]

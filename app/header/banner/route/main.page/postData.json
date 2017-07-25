@@ -1,24 +1,24 @@
 [
     {
-        "header": "Angular security flaw",
+        "title": "Angular security flaw",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "numread": "5",
         "id": "1"
     },
     {
-        "header": "CISCO IOS security flaw",
+        "title": "CISCO IOS security flaw",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "numread": "5",
         "id": "2"
     },
     {
-        "header": "Android backdoor detected",
+        "title": "Android backdoor detected",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." ,
         "numread": "5",
         "id": "3"
     },
     {
-        "header": "Windows 10 zero day exploit",
+        "title": "Windows 10 zero day exploit",
         "content":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "numread":"5",
         "id": "4"

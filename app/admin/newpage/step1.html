@@ -1,0 +1,18 @@
+<div class="center_text" style="margin-top: 10px; color: #3c3c3a;" >
+    <h2 class="fs-title">Step 1</h2>
+    <h3 class="fs-subtitle">Choose page type</h3>
+</div>
+<div style="width: 80%; margin: 0 10%;">
+    <div style="padding: 6px 0px; height: 10%; font-size: 22px;">
+        <span>Page Type:</span>
+        <!-- kutudaki seçenek anytype.type olarak gözükür, seçildiğinde page_tyoe_list içerisideki anytype objesini doğrudan page_type atar -->
+        <a href="#" editable-select="data.page_type" e-ng-options="t.type as t.type for t in page_type_list " style="color:black; border: 1px;">
+            <span><b>{{ data.page_type }}</b></span>
+        </a>
+    </div>
+
+    <div style="margin-top: 15px; margin-bottom: 5px;">
+        <a ui-sref="main.admin.newpage.step2({page_type: page.type})" class="step_button">Next</a>
+    </div>
+</div>
+

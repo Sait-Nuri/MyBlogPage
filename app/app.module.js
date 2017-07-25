@@ -8,10 +8,11 @@ var app = angular.module('appModule', [ 'ngAnimate',
                                         'xeditable']);
 
 app.constant('Config', {
-    post_url : 'header/banner/route/main.page/postData.json',
-    news_url : 'header/banner/route/news.page/newsData.json'
+    post_url : '/post',
+    news_url : 'header/banner/route/news.page/newsData.json',
+    get_all_pages: '/'
 });
 
 app.run(function($rootScope) {
     $rootScope.comment_visible = false;
-})
+});

@@ -1,0 +1,29 @@
+<div class="row" ng-controller="AdminController">
+    <div class="col-sm-12" style="height: 200px; margin-top: 50px; ">
+        <div class="col-sm-6">
+            <a ui-sref="main.admin.editpage.step1">
+                <div class="shadow">
+                    <h1>Edit Pages</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a ui-sref="main.admin.newpage.step1">
+                <div class="shadow">
+                    <h1>New Page</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <style>
+        div{
+            height:100%;
+        }
+        .shadow{
+            background-color: #d4726f;
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        }
+    </style>
+</div>

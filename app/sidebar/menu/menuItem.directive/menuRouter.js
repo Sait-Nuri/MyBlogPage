@@ -2,6 +2,7 @@ var app = angular.module('appModule');
 
 app.provider('menustate', function ($stateProvider) {
     var menuUrl;
+    var host;
 
     this.$get = function ($http, $rootScope) {
 
@@ -24,11 +25,10 @@ app.provider('menustate', function ($stateProvider) {
                         // Configure each state
                         for (var j = 0; j < states.length; j++) {
                             var state = states[j];
-                            state.name = statePath+'.'+state.name;
-                            $stateProvider.state(state.name, state.config);
+                            state.state_name = statePath+'.'+state.state_name;
+                            $stateProvider.state(state.state_name, state.config);
                         }
                     }
-
                 }, function errorCallback(response) {
                     //console.log(response);
                 });

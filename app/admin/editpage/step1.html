@@ -1,0 +1,51 @@
+<div style="padding:10px; border: 1px solid #dddddd;">
+    <uib-tabset active="activeJustified" justified="true">
+        <uib-tab index="0" heading="Posts">
+            <h3>Post sayfaları</h3>
+            <table class="table table-bordered table-striped" style="width: 40%;">
+                <tr>
+                    <th style="width: 5%;">id</th>
+                    <th style="width: 70%">Title</th>
+                    <th style="width: 25%">Action</th>
+                </tr>
+                <tr ng-repeat="post in posts">
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ post.title }}</td>
+                    <td>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#editModal">Edit</button>
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </uib-tab>
+        <uib-tab index="1" heading="News">
+            <h3>Haber Sayfaları</h3>
+            <div style="padding: 5px;" ng-repeat="news in newslist">
+                <a ui-sref="main.admin.editpage.step2({id: news.id, page_type: 'news', action: 'EDIT_PAGE'})" style="padding: 5px; border: 1px solid #dddddd; font-size: 18px; cursor:pointer">{{news.title}}</a>
+            </div>
+        </uib-tab>
+        <uib-tab index="2" heading="Menu items">
+            <h3>Menu listesi</h3>
+        </uib-tab>
+    </uib-tabset>
+    <style>
+        table, th , td  {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        table tr td{
+            padding:5px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</div>

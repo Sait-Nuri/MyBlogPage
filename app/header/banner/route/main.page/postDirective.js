@@ -8,7 +8,7 @@ app.directive('post', function () {
 
     directive.scope = {
         post : '='
-    }
+    };
 
     return directive;
 });

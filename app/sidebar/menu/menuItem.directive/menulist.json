@@ -1,55 +1,55 @@
 [
     {
-        "subject":"Security",
+        "category_title":"Security",
         "states":[
             {
-                "name":"app_sec",
-                "desc":"Application Security",
+                "state_name":"app_sec",
+                "page_title":"Application Security",
                 "config":{
                     "url": "security/app_sec",
-                    "templateUrl": "app/sidebar/menu/partials/app_sec.html"
+                    "templateUrl": "sidebar/menu/partials/app_sec.html"
                 }
             },
             {
-                "name":"net_sec",
-                "desc":"Web Security",
+                "state_name":"net_sec",
+                "page_title":"Web Security",
                 "config":{
                     "url": "security/net_sec",
-                    "templateUrl": "app/sidebar/menu/partials/net_sec.html"
+                    "templateUrl": "sidebar/menu/partials/net_sec.html"
                 }
             },
             {
-                "name":"web_sec",
-                "desc":"Network Security",
+                "state_name":"web_sec",
+                "page_title":"Network Security",
                 "config":{
                     "url": "security/web_sec",
-                    "templateUrl": "app/sidebar/menu/partials/web_sec.html"
+                    "templateUrl": "sidebar/menu/partials/web_sec.html"
                 }
             }
         ]
     },
     {
-        "subject": "AngularJS",
+        "category_title": "AngularJS",
         "states": [
             {
-                "name":"ders1",
-                "desc":"Introduction",
+                "state_name":"ders1",
+                "page_title":"Introduction",
                 "config":{
                     "url": "angular/lesson1",
                     "templateUrl": "angular_lesson1.html"
                 }
             },
             {
-                "name":"ders2",
-                "desc":"Data binding",
+                "state_name":"ders2",
+                "page_title":"Data binding",
                 "config":{
                     "url": "angular/lesson2",
                     "templateUrl": "angular_lesson1.html"
                 }
             },
             {
-                "name":"ders3",
-                "desc":"Controllers",
+                "state_name":"ders3",
+                "page_title":"Controllers",
                 "config":{
                     "url": "angular/lesson3",
                     "templateUrl": "web_sec.html"

@@ -8,15 +8,15 @@ app.controller('MenuController', ['$scope', 'menustate', function($scope, menust
         var each_menu = menu_items[i];
 
         var itemObj = {
-            subject: each_menu.subject,
-            isCollapsed: true,
-            sublist: each_menu.states
+            'category_title': each_menu.category_title,
+            'isCollapsed': true,
+            'states': each_menu.states
         };
 
         scope_items.push(itemObj);
     }
 
     $scope.menu_items = scope_items;
-    console.log(menustate.getStates());
+    //console.log(menustate.getStates());
 }]);
 
